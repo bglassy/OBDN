@@ -10,12 +10,13 @@
 
 
 ###Internal Modules
+A module that is fully controlled by the Developer Network (developed, maintained, and used)
 
-######Developer Playground
+#####Developer Playground
   A platform allowing OpenBazaar developers to compete in contributor activity earning badges and ranking on the Developer Board
   
-######Developer Board
+#####Developer Board
   A publicly viewable ranking board based on contributor activity. Nobody should feel left out. If you contribute, you rank up(GitHub activity, Playground activity)
   
-######Knowledgebase
+#####Knowledgebase
   Making Documentation pertaining to OpenBazaar easily accessible, and searchable
