@@ -1,5 +1,4 @@
 OpenBazaar Developer Network (OBDN)
 ====
-A platform that allows a community of OpenBazaar developers to share their ideas, collaborate on how best to implement these ideas, and then make them a reality.
+Maintaining resources aimed at nurturing development of OpenBazaar, as-well as making collaboration and communication easier and more effective between developers cross-web.
 
-Currently using CodeIgniter PHP Framework.
