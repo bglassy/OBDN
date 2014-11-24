@@ -68,7 +68,7 @@ li {
   font-weight: 300;
 }
 
-.welcome-message { padding-top: 1.5em; }
+.subscribe { padding-top: 1.5em; }
 
 .rotate { text-shadow: none !important; }
 
@@ -178,34 +178,6 @@ li {
 
 .fa-paper-plane { padding-left: .5em; }
 
-/* ==========================================================================
-   Countdown styles
-   ========================================================================== */
-   
-ul.countdown {
-  list-style: none;
-  display: block;
-  margin-bottom: 0;
-  padding: 1.5em 0 0;
-}
-
-.countdown p { color: #fff; }
-
-ul.countdown li { display: inline-block; }
-
-ul.countdown li span { font-size: 36px; }
-
-ul.countdown li.seperator {
-  font-size: 30px;
-  line-height: 50px;
-  vertical-align: top;
-  padding: 0 8px;
-}
-
-ul.countdown li p {
-  font-size: 16px;
-  margin-bottom: 0;
-}
 
 /* ==========================================================================
    Social 
@@ -238,6 +210,32 @@ ul.countdown li p {
   background: #2d62bb;
 }
 
+.learn { float: none; }
+
+.learn li {
+  display: inline-block;
+  padding-right: .8em;
+}
+
+.learn li:last-child { padding-right: 0; }
+
+.learn li a {
+  display: block;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  color: #fff;
+  border-radius: 50%;
+  background: #3c83f9;
+  position: relative;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.learn li a:hover {
+  color: #fff;
+  background: #2d62bb;
+}
 /* ==========================================================================
    In a nutshell
    ========================================================================== */
@@ -419,24 +417,14 @@ color: #ffffff;
   margin-bottom: 0;
 }
 
-.welcome-message { padding-top: 6em; }
+.subscribe { padding-top: 6em; }
 
 .main h1 { font-size: 52px; }
 
 .social { float: right; }
 
-ul.countdown { padding-top: 3em; }
+.learn { float: right; }
 
-ul.countdown li span { font-size: 48px; }
-
-ul.countdown li.seperator {
-  font-size: 36px;
-  line-height: 68px;
-  padding: 0 20px;
-}
-
-ul.countdown li p { font-size: 20px; }
-}
 
 /* ==========================================================================
    Medium devices (desktops, 992px and up) 
@@ -460,7 +448,7 @@ ul.countdown li p { font-size: 20px; }
   z-index: 2;
 }
 
-.welcome-message { padding-top: 9em; }
+.subscribe { padding-top: 9em; }
 
 .section-spacing { padding: 6em 0; }
 
@@ -513,18 +501,4 @@ transform:none;
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
-}
-
-@media (max-width: 320px) {
-
-ul.countdown li span { font-size: 28.833px; }
-
-ul.countdown li.seperator {
-  font-size: 25.629px;
-  line-height: 38.439px;
-  vertical-align: top;
-  padding: 0 2px;
-}
-
-ul.countdown li p { font-size: 12.642px; }
 }
