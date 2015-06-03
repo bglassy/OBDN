@@ -12,7 +12,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
-<link rel="shortcut icon" href="favicon.png"
+<link rel="shortcut icon" href="favicon.png">
 </head>
     
 <body>
@@ -24,7 +24,7 @@
     <div class="row">
       <div class="col-md-6 col-sm-6"> 
         <!--LOGO-->
-        <div class="logo"><img src="img/obdn.png" width="304" height="86.5" data-at2x="img/obdn@2x.png" alt="logo"></div>
+        <div class="logo"><img src="img/obdn.png" width="304" height="86.5" alt="logo"></div>
         <!--LOGO END--> 
       </div>
 
@@ -32,7 +32,7 @@
         
         <!--LEARN-->
         <div class="learn text-center">
-                        <button style="margin-top: 2.5em;" class="wow fadeInUp btn btn-success submit-btn"><a style="color: #ffffff;" href="https://blog.openbazaar.org/announcing-development-of-the-openbazaar-developer-network/" target="_blank">Learn more</a></button>
+                       <a style="margin-top: 25%;" class="btn btn-success submit-btn" href="https://blog.openbazaar.org/what-is-openbazaar/" target="_blank">Learn more</a>
         </div>
         <!--LEARN END--> 
       </div>
@@ -50,12 +50,12 @@
         <div class="sub-form text-center">
           <div class="row">
             <div class="col-md-5 center-block col-sm-8 col-xs-11">
-              <form role="form" id="mc-form" action="">
+              <form role="form" id="mc-form" action="subscribe.php" method="POST">
                 <div class="input-group">
-                  <input type="email" class="form-control" placeholder="Email" required value="" name="EMAIL">
+                  <input type='text' class="form-control" placeholder="Email" required value="Your email..." name="email">
                   <span class="input-group-btn">
-                  <button type="submit" class="btn btn-default" id="mc-subscribe" value="Subscribe" name="subscribe">Submit<i class="fa fa-paper-plane"></i></button>
-                  </span> </div>
+                 <input type='submit' class="btn btn-default" value='Subscribe' />
+                 <input type='hidden' value='1' name='submitted' />
               </form>
               <p id="mc-notification"></p>
             </div>
@@ -69,7 +69,7 @@
                <li style="display: inline; font-size: 24px; margin-left: 1em;"><a href="https://reddit.com/r/obdn" target="_blank">Reddit</a></li>
                <li style="display: inline; font-size: 24px; margin-left: 1em;">#OBDN on <a href="https://freenode.net" target="_blank">FreeNode</a></li>
         </ul>
-        
+
       </div>
     </div>
   </div>
@@ -81,44 +81,44 @@
 <section class="nutshell section-spacing">
   <div class="container">
             <h1 class="text-center">OpenBazaar Developer Network in a Nutshell</h1>
-      <p style="color: #000000;" class="text-center">The OpenBazaar Developer Network is a collective network of resources aimed to nurture development of OpenBazaar and better maintain communication and collaboration between it's developers. The Developer Network is comprised of nifty things called <b>modules</b>. You can learn more about modules <a href="">here</a>.</p>
+      <p style="color: #000000;" class="text-center">The OpenBazaar Developer Network is a collective network of resources aimed to nurture development of OpenBazaar and better maintain communication and collaboration between it's developers. The Developer Network is comprised of nifty things called <b>modules</b>. You can learn more about modules <a href="https://github.com/bglassy/OBDN/blob/master/README.md" target="_blank">here</a>.</p>
     <div style="margin-top: 3.5em;" class="row">
       <div class="col-md-6">
         <div class="wow fadeInUp obdn-nutshell row">
-          <div class="col-md-3 col-sm-3 col-xs-3 text-center"><img src="img/plugin.png" data-at2x="img/plugin@2x.png" alt="nutshell"></div>
+          <div class="col-md-3 col-sm-3 col-xs-3 text-center"><img src="img/plugin.png" alt="nutshell"></div>
           <div class="col-md-9 col-sm-9 col-xs-9"> 
             <!--NUTSHELL 1-->
             <h4>Developer Playground</h4>
-            <p>An <b>Internal DN Module</b> allowing OpenBazaar developers to compete in contributor activity earning badges and ranking on the Developer Board</p>
+            <p>An <b>Internal Module</b> allowing OpenBazaar developers to compete in contributor activity earning badges and ranking on the Developer Board</p>
             <!--NUTSHELL 1 END--> 
           </div>
         </div>
         <div class="wow fadeInUp obdn-nutshell row">
-           <div class="col-md-3 col-sm-3 col-xs-3 text-center"><img src="img/genius.png" data-at2x="img/genius@2x.png" alt="nutshell"></div>
+           <div class="col-md-3 col-sm-3 col-xs-3 text-center"><img src="img/genius.png" alt="nutshell"></div>
           <div class="col-md-9 col-sm-9 col-xs-9"> 
             <!--NUTSHELL 2-->
-            <h4>Knowledgebase</h4>
-            <p>An <b>Internal DN Module</b> making Documentation pertaining to OpenBazaar easily accessible, and searchable</p>
+            <h4>Knowledge Base</h4>
+            <p>An <b>Internal Module</b> making Documentation pertaining to OpenBazaar easily accessible, and searchable</p>
             <!--NUTSHELL 2 END--> 
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="wow fadeInUp obdn-nutshell row">
-          <div class="col-md-3 col-sm-3 col-xs-3 text-center"><img src="img/global.png" data-at2x="img/global@2x.png" alt="nutshell"></div>
+          <div class="col-md-3 col-sm-3 col-xs-3 text-center"><img src="img/global.png" alt="nutshell"></div>
           <div class="col-md-9 col-sm-9 col-xs-9"> 
             <!--NUTSHELL 3-->
             <h4>Communication</h4>
-            <p>Comprised of several <b>External DN Modules</b> maintaining a number of ways for developers to communicate with eachother and the community across the web</p>
+            <p>Comprised of several <b>External Modules</b> maintaining a number of ways for developers to communicate with eachother and the community across the web</p>
             <!--NUTSHELL 3 END--> 
           </div>
         </div>
         <div class="wow fadeInUp obdn-nutshell row">
-         <div class="col-md-3 col-sm-3 col-xs-3 text-center"><img src="img/clipboard.png" data-at2x="img/clipboard@2x.png" alt="nutshell"></div>
+         <div class="col-md-3 col-sm-3 col-xs-3 text-center"><img src="img/clipboard.png" alt="nutshell"></div>
           <div class="col-md-9 col-sm-9 col-xs-9"> 
             <!--NUTSHELL 4-->
             <h4>Developer Board</h4>
-            <p>An <b>Internal DN Module</b> providing a publicly viewable ranking board based on contributor activity. Nobody should feel left out. If you contribute, you rank up(GitHub activity, Playground activity)</p>
+            <p>An <b>Internal Module</b> providing a publicly viewable ranking board based on contributor activity. Nobody should feel left out. If you contribute, you rank up(GitHub activity, Developer Playground activity)</p>
             <!--NUTSHELL 4 END--> 
 
           </div>
@@ -154,17 +154,16 @@
     <div class="row">
       <div class="col-md-7"> 
           
-        <div class="wow fadeInUp">
           <img src="img/logo-contact.png">
-          <h3 style="margin-top: 1em;">Join the world on a mission of freedom.</h3>
-              <h3>Freedom to purchase, sell, and trade.</h3>
-        </div>
+            <h3 style="margin-top: 1em;">Join the world on a mission of freedom.</h3>
+                <h3>Freedom to purchase, sell, and trade.</h3>
 
       </div>
       <div class="col-md-5"> 
         
-     <a class="twitter-timeline" href="https://twitter.com/BradenGlasgow" data-widget-id="536768952819392512">Tweets by @BradenGlasgow</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                 <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/openbazaar" data-widget-id="531608374400385025">Tweets by @openbazaar</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
       </div>
     </div>
   </div>
@@ -181,15 +180,15 @@
         <!--SOCIAL-->
         
         <ul class="social">
-    <li><a href="" target="_blank"><i class="fa fa-github"></i></a></li>
-                                                    <li><a href="" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
-               <li><a href="" target="_blank"><i class="fa fa-rss"></i></a></li>
-               <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://github.com/OpenBazaar" target="_blank"><i class="fa fa-github"></i></a></li>
+                                                    <li><a href="braden@openbazaar.org" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+               <li><a href="http://www.reddit.com/r/obdn/" target="_blank"><i class="fa fa-reddit"></i></a></li>
+               <li><a href="https://twitter.com/OpenBazaar" target="_blank"><i class="fa fa-twitter"></i></a></li>
         </ul>
         
         <!--SOCIAL END--> 
         
-        <small class="wow fadeInUp">&copy; Copyright <img style="margin-left: 0.3em; margin-right: 0.15em; margin-bottom: 0.6em;" src="img/logo-icon.png" width="20" height="20">OpenBazaar. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Some Rights Reserved</a>.</small> </div>
+        <small>&copy; Copyright <img style="margin-left: 0.3em; margin-right: 0.15em; margin-bottom: 0.6em;" src="img/logo-icon.png" width="20" height="20">OpenBazaar. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Some Rights Reserved</a>.</small> </div>
     </div>
   </div>
 </footer>

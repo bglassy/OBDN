@@ -281,37 +281,37 @@ color: #ffffff;
 }
 
 .twitter-feed h2,
-.contact h2 { margin: 0; }
+.mission h2 { margin: 0; }
 
 
 /* ==========================================================================
-   Contact
+   mission
    ========================================================================== */
  
-.contact h2 { margin-bottom: 1.5em; }
+.mission h2 { margin-bottom: 1.5em; }
 
-.contact-form { margin-top: 3em; }
+.mission-form { margin-top: 3em; }
 
-.contact-form .form-control {
+.mission-form .form-control {
   border-color: #ddd;
   margin-bottom: .75em;
   padding: .75em 12px;
 }
 
-.contact-form label.error {
+.mission-form label.error {
   margin-bottom: 12px;
   font-weight: 300;
   color: #ea5050;
 }
 
-.contact .btn-default { width: 100%; }
+.mission .btn-default { width: 100%; }
 
 /* ==========================================================================
-   contact Form Validation
+   mission Form Validation
    ========================================================================== */
    
 
-.contact-form label.error i { padding-right: 8px; }
+.mission-form label.error i { padding-right: 8px; }
 
 .success-cf,
 .error-cf { display: none; }
@@ -320,10 +320,10 @@ color: #ffffff;
 
 .error-cf p { background: rgba(231, 76, 60, 0.7); }
 
-.contact-form { position: relative; }
+.mission-form { position: relative; }
 
-.contact-form .success-cf p,
-.contact-form .error-cf p {
+.mission-form .success-cf p,
+.mission-form .error-cf p {
   position: absolute;
   display: block;
   top: 40%;
@@ -442,7 +442,7 @@ color: #ffffff;
 
 .nutshell,
 .twitter-feed,
-.contact,
+.mission,
 .site-footer {
   position: relative;
   z-index: 2;
@@ -460,9 +460,9 @@ color: #ffffff;
 .obdn-nutshell { margin-bottom: 3.75em; }
 
 .nutshell.section-spacing,
-.contact { background: #fff; }
+.mission { background: #fff; }
 
-.contact-form { margin-top: 0; }
+.mission-form { margin-top: 0; }
 
 .animated {
   -webkit-animation-duration: 1s;
