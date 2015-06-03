@@ -34,3 +34,50 @@ Better maintain communication and collaboration between it's developers
 
 ####ZenDesk
   Interactive help desk
+
+
+
+
+#Development Roadmap
+             
+##Developer Network
+####Documentation
+* Brainstorming
+
+####Portal 
+* Brainstorming
+
+####Landing page
+######To-Do
+* Update twitter feed
+* Update news feed
+* Integrate proprietary email newsletter system
+* Update links
+
+          
+
+##Developer Playground Module
+####Initial development
+* Brainstorming
+
+####Continued development
+* User authentication, roles and profiles created
+* Tasking back-end at alpha 0.1
+* Discussion back-end at alpha 0.1                             
+* Feature Cards back-end started
+
+
+##Developer Board Module
+####Initial development
+* Brainstorming
+
+####Continued development                             
+
+
+
+
+##Knowledge Base Module
+####Initial development
+* Brainstorming
+
+####Continued development
