@@ -79,5 +79,6 @@ better maintain communication and collaboration between it's developers
 ##Knowledge Base Module
 ####Initial development
 * Brainstorming
+* Basic database infrastructure and search algorithms started
 
 ####Continued development
