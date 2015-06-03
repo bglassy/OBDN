@@ -1,5 +1,5 @@
 #Purpose 
-    Maintaining a collective network of resources aimed to nurture development of the OpenBazaar platform
+Maintaining a collective network of resources aimed to nurture development of the OpenBazaar platform
 Better maintain communication and collaboration between it's developers
 
 
