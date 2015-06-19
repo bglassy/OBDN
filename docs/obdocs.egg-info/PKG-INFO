@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: obdocs
+Version: 0.1.1.dev
+Summary: OpenBazaar Platform Documentation
+Home-page: http://docs.openbazaar.org
+Author: bglassy
+Author-email: braden@openbazaar.org
+License: BSD
+Description: OBDocs is an OpenBazaar Documentation site generator.
+Platform: UNKNOWN
