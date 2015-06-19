@@ -1,27 +1,4 @@
-<?php
-
-if(isset($_POST['submitted'])) { 
-    $link = new mysqli("localhost", "braden", "P@ssw0rd", "ob_newsletter") or die('There was a problem connecting to the database.');
-    $email = $_POST['email'];
-
-    $sql = "INSERT INTO subscribers (email) VALUE ('$email')";
-    $stmt = $link->query($sql) or die($link->error);
-    $stmt->close;
-
-} else {header('Location: index.php');}
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" >
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-        <title>OpenBazaar Developer Network</title>
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-    </head>
-    <body>
-        <div id="container">
-
+<!DOCTYPE html>
 
 <html>
 
@@ -30,11 +7,12 @@ if(isset($_POST['submitted'])) {
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OpenBazaar Developer Network</title>
-<meta name="description" content="The OpenBazaar Developer Network.">
+<title>OpenBazaar Contributors</title>
+<meta name="description" content="OpenBazaar Contributors">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link href="css/main.css" rel="stylesheet">
+<link href="css/hubinfo.css" rel="stylesheet">
 <link rel="shortcut icon" href="favicon.png">
 </head>
     
@@ -65,7 +43,25 @@ if(isset($_POST['submitted'])) {
         
         <!--SUBSCRIBE-->
         <header class="subscribe text-center">
-          <h1><span>Thanks for subscribing!</span></h1>
+           <?php
+            if(isset($_POST['submitted']))
+            {
+                mysql_connect('localhost','braden','P@ssw0rd');
+                mysql_select_db('ob_newsletter');
+                $email=$_POST['email'];
+                $query=mysql_query("select * from subscribers where email='".$email."' ") or die(mysql_error());
+                $duplicate=mysql_num_rows($query);
+                    if($duplicate==0)
+                    {
+                        $query1=mysql_query("INSERT INTO subscribers (email) VALUE ('$email')")  or die(mysql_error());
+                         echo'<h1><span> Thanks for subscribing! </span></h1>';
+                    }
+                else
+                {
+      echo'<h1><span> The email '.$email.' is already subscribed </span></h1>';
+    }
+}
+?>
         </header>
         <!--SUBSCRIBE END--> 
         
@@ -79,9 +75,9 @@ if(isset($_POST['submitted'])) {
                   <span class="input-group-btn">
                  <input type='submit' class="btn btn-default" value='Subscribe' />
                  <input type='hidden' value='1' name='submitted' />
+                    </span>
+                  </div>
               </form>
-              <p id="mc-notification"></p>
-            </div>
           </div>
         </div>
         <!--sub-form end--> 
@@ -89,7 +85,8 @@ if(isset($_POST['submitted'])) {
       </div>
     </div>
   </div>
-</section>
+    </div>
+    </section>
 <!--MAIN END--> 
 
 <!--IN A NUTSHELL-->
@@ -97,7 +94,7 @@ if(isset($_POST['submitted'])) {
 <section class="nutshell section-spacing">
   <div class="container">
             <h1 class="text-center">Contributing to OpenBazaar</h1>
-      <p style="color: #000000;" class="text-center">OpenBazaar is an open source project. We love contributions. Whether you're a developer, someone wanting to test out the platform, or someone who just loves what we do, you can contribute!
+      <p style="color: #000000;" class="text-center"><a href="https://openbazaar.org">OpenBazaar</a> is an open source project. We love contributions. Whether you're a developer, someone wanting to test out the platform, or someone who just loves what we do, you can contribute!
     <div style="margin-top: 3.5em;" class="row">
       <div class="col-md-6">
         <div class="wow fadeInUp obdn-nutshell row">
@@ -142,6 +139,7 @@ if(isset($_POST['submitted'])) {
         </div>
       </div>
     </div>
+      
   </div>
 </section>
 
@@ -174,7 +172,6 @@ if(isset($_POST['submitted'])) {
           <img src="img/logo-contact.png">
             <h3 style="margin-top: 1em;">Join the world on a mission of freedom.</h3>
                 <h3>Freedom to purchase, sell, and trade.</h3>
-
       </div>
       <div class="col-md-5"> 
         
@@ -182,7 +179,8 @@ if(isset($_POST['submitted'])) {
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           
       </div>
-    </div>
+    </div><br /><br />
+      <div id="hubInfo"></div>
   </div>
 </section>
 
@@ -225,6 +223,13 @@ if(isset($_POST['submitted'])) {
 <script src="js/jquery.validate.min.js"></script> 
 <script src="js/jquery.simple-text-rotator.min.js"></script> 
 <script src="js/main.js"></script> 
+<script src="js/hubinfo.min.js"></script>
+<script>
+$("#hubInfo").hubInfo({ 
+    user: "OpenBazaar",
+    repo: "OpenBazaar"
+});
+</script>
 
     
           <!-- News feed required
@@ -252,8 +257,4 @@ if(isset($_POST['submitted'])) {
     </script>
 </body>
 
-</html>
-
-        </div>
-    </body>
 </html>
