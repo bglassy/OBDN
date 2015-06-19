@@ -12,6 +12,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link href="css/main.css" rel="stylesheet">
+<link href="css/hubinfo.css" rel="stylesheet">
 <link rel="shortcut icon" href="favicon.png">
 </head>
     
@@ -56,9 +57,9 @@
                   <span class="input-group-btn">
                  <input type='submit' class="btn btn-default" value='Subscribe' />
                  <input type='hidden' value='1' name='submitted' />
+                    </span>
+                  </div>
               </form>
-              <p id="mc-notification"></p>
-            </div>
           </div>
         </div>
         <!--sub-form end--> 
@@ -66,7 +67,8 @@
       </div>
     </div>
   </div>
-</section>
+    </div>
+    </section>
 <!--MAIN END--> 
 
 <!--IN A NUTSHELL-->
@@ -119,6 +121,7 @@
         </div>
       </div>
     </div>
+      
   </div>
 </section>
 
@@ -151,7 +154,6 @@
           <img src="img/logo-contact.png">
             <h3 style="margin-top: 1em;">Join the world on a mission of freedom.</h3>
                 <h3>Freedom to purchase, sell, and trade.</h3>
-
       </div>
       <div class="col-md-5"> 
         
@@ -159,7 +161,8 @@
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           
       </div>
-    </div>
+    </div><br /><br />
+      <div id="hubInfo"></div>
   </div>
 </section>
 
@@ -202,6 +205,13 @@
 <script src="js/jquery.validate.min.js"></script> 
 <script src="js/jquery.simple-text-rotator.min.js"></script> 
 <script src="js/main.js"></script> 
+<script src="js/hubinfo.min.js"></script>
+<script>
+$("#hubInfo").hubInfo({ 
+    user: "OpenBazaar",
+    repo: "OpenBazaar"
+});
+</script>
 
     
           <!-- News feed required

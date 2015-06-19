@@ -4,6 +4,7 @@
    ========================================================================== */
 
 
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -411,6 +412,7 @@ color: #ffffff;
 
 .main { padding: 3em 0 7.5em; }
 
+
 .logo {
   text-align: justify;
   margin-bottom: 0;
@@ -418,7 +420,6 @@ color: #ffffff;
 
 .subscribe { padding-top: 6em; }
 
-.main h1 { font-size: 52px; }
 
 .social { float: right; }
 
