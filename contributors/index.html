@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link href="css/main.css" rel="stylesheet">
 <link href="css/hubinfo.css" rel="stylesheet">
-<link rel="shortcut icon" href="favicon.png">
+<link rel="shortcut icon" href="img/favicon.png">
 </head>
     
 <body>
