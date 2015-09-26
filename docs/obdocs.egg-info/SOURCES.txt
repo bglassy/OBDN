@@ -4,7 +4,6 @@ obdocs/__init__.py
 obdocs/build.py
 obdocs/cli.py
 obdocs/exceptions.py
-obdocs/gh_deploy.py
 obdocs/nav.py
 obdocs/relative_path_ext.py
 obdocs/search.py

@@ -2,7 +2,7 @@
 import git, os, shutil
  
 DIR_NAME = "PATH_TO_GIT_CLONE/docs"
-REMOTE_URL = "https://github.com/drwasho/openbazaar-documentation.git"
+REMOTE_URL = "https://github.com/OpenBazaar/OpenBazaar.wiki.git"
  
 if os.path.isdir(DIR_NAME):
     shutil.rmtree(DIR_NAME)
@@ -14,45 +14,38 @@ origin = repo.create_remote('origin',REMOTE_URL)
 origin.fetch()
 origin.pull(origin.refs[0].remote_head)
 
-renameReadme = "PATH_TO_GIT_CLONE/docs/README.md"
-base = os.path.splitext(renameReadme)[0]
-os.rename(renameReadme, base + ".txt")
-
-renameDex = "PATH_TO_GIT_CLONE/docs/01 About.md"
+renamek = "PATH_TO_GIT_CLONE/docs/01.-What-is-OpenBazaar.md"
 base = os.path.splitext("PATH_TO_GIT_CLONE/docs/index")[0]
-os.rename(renameDex, base + ".md")
+os.rename(renamek, base + ".md")
 
-renameStart = "PATH_TO_GIT_CLONE/docs/02 Getting Started.md"
-base = os.path.splitext("PATH_TO_GIT_CLONE/docs/Getting Started")[0]
-os.rename(renameStart, base + ".md")
+rename1 = "PATH_TO_GIT_CLONE/docs/Instrucciones-para-desarrollo.md"
+base = os.path.splitext(rename1)[0]
+os.rename(rename1, base + ".txt")
 
-renameProto = "PATH_TO_GIT_CLONE/docs/03 Protocol.md"
-base = os.path.splitext("PATH_TO_GIT_CLONE/docs/Protocol")[0]
-os.rename(renameProto, base + ".md")
+rename2 = "PATH_TO_GIT_CLONE/docs/_Footer.md"
+base = os.path.splitext(rename2)[0]
+os.rename(rename2, base + ".txt")
 
-renameMarket = "PATH_TO_GIT_CLONE/docs/04 Marketplaces.md"
-base = os.path.splitext("PATH_TO_GIT_CLONE/docs/Marketplaces")[0]
-os.rename(renameMarket, base + ".md")
+rename3 = "PATH_TO_GIT_CLONE/docs/_Sidebar.md"
+base = os.path.splitext(rename3)[0]
+os.rename(rename3, base + ".txt")
 
-renameRoad = "PATH_TO_GIT_CLONE/docs/05 Roadmap.md"
-base = os.path.splitext("PATH_TO_GIT_CLONE/docs/Roadmap")[0]
-os.rename(renameRoad, base + ".md")
+rename4 = "PATH_TO_GIT_CLONE/docs/_Español-Instrucciones.md"
+base = os.path.splitext(rename4)[0]
+os.rename(rename4, base + ".txt")
 
-renameDev = "PATH_TO_GIT_CLONE/docs/06 Developers.md"
-base = os.path.splitext("PATH_TO_GIT_CLONE/docs/Developers")[0]
-os.rename(renameDev, base + ".md")
+rename5 = "PATH_TO_GIT_CLONE/docs/Windows-support.md"
+base = os.path.splitext(rename5)[0]
+os.rename(rename5, base + ".txt")
 
-renameArticles = "PATH_TO_GIT_CLONE/docs/07 Articles.md"
-base = os.path.splitext("PATH_TO_GIT_CLONE/docs/Articles")[0]
-os.rename(renameArticles, base + ".md")
+rename6 = "PATH_TO_GIT_CLONE/docs/Home.md"
+base = os.path.splitext(rename6)[0]
+os.rename(rename6, base + ".txt")
 
-renameReference = "PATH_TO_GIT_CLONE/docs/08 References.md"
-base = os.path.splitext("PATH_TO_GIT_CLONE/docs/References")[0]
-os.rename(renameReference, base + ".md")
+rename7 = "PATH_TO_GIT_CLONE/docs/10.-Contact-Us.md"
+base = os.path.splitext(rename7)[0]
+os.rename(rename7, base + ".txt")
 
-renameFAQ = "PATH_TO_GIT_CLONE/docs/09 FAQ.md"
-base = os.path.splitext("PATH_TO_GIT_CLONE/docs/FAQ")[0]
-os.rename(renameFAQ, base + ".md")
 
 os.system("cd PATH_TO_GIT_CLONE && /usr/bin/python /usr/local/bin/obdocs build --clean")
 

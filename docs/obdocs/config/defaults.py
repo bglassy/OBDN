@@ -5,10 +5,6 @@ import six
 from obdocs import utils
 from obdocs.config import config_options
 
-# NOTE: The order here is important. During validation some config options
-# depend on others. So, if config option A depends on B, then A should be
-# listed higher in the schema.
-
 DEFAULT_SCHEMA = (
 
     # Reserved for internal use, stores the obdocs.yml config file.

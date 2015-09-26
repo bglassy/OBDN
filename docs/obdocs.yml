@@ -2,13 +2,13 @@ site_name: OpenBazaar Docs
 site_description: Documentation for OpenBazaar
 pages:
 - Home: index.md
-- Getting Started: Getting Started.md
-- Protocol: Protocol.md
-- Marketplaces: Marketplaces.md
-- Roadmap: Roadmap.md
-- Developers: Developers.md
-- Articles: Articles.md
-- References: References.md
-- FAQ: FAQ.md
+- Getting Started: 02.-Getting-Started.md
+- Protocol: 03.-OpenBazaar-Protocol.md
+- Marketplaces: 04.-Marketplaces.md
+- Roadmap: 05.-Roadmap.md
+- Developers: 06.-Developers.md
+- Articles: 07.-Articles.md
+- References: 08.-Reference-Documentation.md
+- FAQ: 09.-Frequently-Asked-Questions.md
 
 copyright: Copyright &copy; 2015&nbsp; <a href="https://openbazaar.org">OpenBazaar</a>. <a href="https://creativecommons.org/licenses/by/4.0/">Some rights reserved</a>.

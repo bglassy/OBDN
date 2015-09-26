@@ -82,7 +82,7 @@ remote_branch_help = ("The remote branch to commit to for Github Pages. This "
 @common_options
 def cli():
     """
-    OBDocs - OpenBazaar Platform Documentation
+    OBDocs - OpenBazaar Documentation
     """
     pass
 
@@ -120,7 +120,7 @@ def serve_command(dev_addr, config_file, strict, theme, livereload):
 @click.option('-d', '--site-dir', type=click.Path(), help=site_dir_help)
 @common_options
 def build_command(clean, config_file, strict, theme, site_dir):
-    """Build the OBDocs documentation"""
+    """Build the OpenBazaar documentation"""
     try:
         build.build(load_config(
             config_file=config_file,

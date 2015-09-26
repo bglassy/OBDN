@@ -11,7 +11,7 @@ PY26 = sys.version_info[:2] == (2, 6)
 
 
 long_description = (
-    "OBDocs is an OpenBazaar Documentation site generator."
+    "OpenBazaar Documentation."
 )
 
 
@@ -48,7 +48,7 @@ setup(
     version=get_version("obdocs"),
     url='http://docs.openbazaar.org',
     license='BSD',
-    description='OpenBazaar Platform Documentation',
+    description='OpenBazaar Documentation',
     long_description=long_description,
     author='bglassy',
     author_email='braden@openbazaar.org',  # SEE NOTE BELOW (*)
