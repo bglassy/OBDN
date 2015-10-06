@@ -1,48 +1,127 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="The OpenBazaar Developer Network is a collective network of resources aimed to nurture development of OpenBazaar.">
+    <meta name="keywords" content="openbazaar, developer, network, platform, decentralized">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <title>OpenBazaar Developer Network</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/hubinfo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="assets/js/feed.js"></script>
+    <script src="assets/js/hubinfo.js"></script>
 
-    <head>
-        <meta charset="utf-8">
-        <title>OpenBazaar Developer Network</title>
-        <link rel="shortcut icon" href="assets/img/favicon.png">
-        
-        <!-- Styles -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!-- <link rel="stylesheet" href="contributors/css/hubinfo.css"> -->
-        
-        <!-- Mobile Specific Metas -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    </head>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="content">
+    <div id="hero">
+        <div class="header">
+        <div class="nav">
+            <img class="logo" src="assets/img/logo.png">
+            <ul>
+            <li><a href="https://github.com/OpenBazaar/OpenBazaar-Server/tree/master/api" target="_blank">API</a></li>
+            <li><a href="https://openbazaar-slackin-drwasho.herokuapp.com/" target="_blank">Developers</a></li>
+            <li><a href="http://blog.openbazaar.org" target="_blank">Blog</a></li>
+            <li><a href="https://github.com/OpenBazaar" target="_blank">View on Github</a>&nbsp;<i class="fa fa-github fa-lg" style="color: #fff;"></i>
+</li>
+            </ul>
+        </div>
+            </div>
+       <span class="opening">Maintaining a collective network of resources<br /> aimed to nurture development of OpenBazaar</span>
+        <div class="docs">
+        <a class="btn" href="http://docs.openbazaar.org" target="_blank">Browse the docs</a>
+       </div>
+    </div>
     
-    <body>
-        <section class="wrapper">
-            <div class="overlay"></div>
-            <img class="center" src="assets/img/logo.png">
-            
-        
-      <ul style="margin-top: 2em;" class="center">
-    <li style="display: inline; font-size: 24px;"><a href="http://docs.openbazaar.org" target="_blank">Documentation</a></li>
-                                                    <li style="display: inline; font-size: 24px; margin-left: 1em;"><a href="https://github.com/OpenBazaar" target="_blank">GitHub</a></li>
-               <li style="display: inline; font-size: 24px; margin-left: 1em;">#OBDN on <a href="https://freenode.net" target="_blank">FreeNode</a></li>
-          
-          <h4 style="">Maintaining a collective network of resources aimed to nurture development of the <a href="http://openbazaar.org">OpenBazaar</a> platform</h4>
-          
-        </ul>
-            <p style="text-align: left; margin-top: 10%; margin-left: 5%;"><a href="https://github.com/bglassy/OBDN">v0.0.1</a></p>
+    <div id="extend">
+        <h2 style="font-weight: strong;">Developer Blog</h2><br />
+        <div class="blog"><div class="blog-excerpt" id="feedContent"></div></div>
+    </div>
+       
+    <div id="extend2">
+                  <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/openbazaar" data-widget-id="531608374400385025">Tweets by @openbazaar</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+         <br /><br />
+        <section id="github">
+            <div id="openbazaar-server"></div>
         </section>
-        
-        <!-- <section id="github">
-            <div id="hubInfo"></div>
+        <section id="github">
+            <div id="openbazaar-client"></div>
         </section>
-
-        <script src="contributors/js/jquery-1.11.1.min.js"></script>
-        <script src="contributors/js/hubinfo.min.js"></script>
-        <script>
-            $("#hubInfo").hubInfo({ 
+        <section id="github">
+            <div id="openbazaar-installer"></div>
+        </section>
+        <section id="github">
+            <div id="openbazaar-org"></div>
+        </section>
+        <section id="github">
+            <div id="openbazaar-docs"></div>
+        </section>
+          
+    </div>
+    
+    </div>
+    <div id="footer">
+       <br /> &copy; Copyright <a href="http://openbazaar.org">OpenBazaar</a>. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Some Rights Reserved</a>.
+    </div>
+        </div>
+    
+        
+    
+    <script type="text/javascript">
+      $.blogFeed('https://blog.openbazaar.org/feed',
+         function(feeds){
+            if(!feeds){
+               alert('there was an error');
+            }
+            for(var i=0;i<feeds.entries.length;i++){
+               var entry = feeds.entries[i];
+               var title = entry.title;
+               var link = entry.link;
+               var description = entry.content;
+ 
+ 
+               var html = "<div class='entry'><h4 class='postTitle'><a class='fancy block' href='" + link + "' target='_blank'>" +   title + "</a></h4>";
+                   html += "<p class='description'>" + description + "</p></div>";
+ 
+ 
+            $("#feedContent").append($(html));
+              }
+          }, 5);
+    </script>
+    <script>
+            $("#openbazaar-server").hubInfo({ 
                 user: "OpenBazaar",
-                repo: "OpenBazaar"
+                repo: "OpenBazaar-Server"
             });
-        </script> -->
-    </body>
+        </script>
+        <script>
+            $("#openbazaar-client").hubInfo({ 
+                user: "OpenBazaar",
+                repo: "OpenBazaar-Client"
+            });
+        </script>
+        <script>
+            $("#openbazaar-installer").hubInfo({ 
+                user: "OpenBazaar",
+                repo: "OpenBazaar-Installer"
+            });
+        </script>
+        <script>
+            $("#openbazaar-org").hubInfo({ 
+                user: "OpenBazaar",
+                repo: "openbazaar.org"
+            });
+        </script>
+        <script>
+            $("#openbazaar-docs").hubInfo({ 
+                user: "bglassy",
+                repo: "OpenBazaar-Docs"
+            });
+        </script>
+</body>
 </html>

@@ -1,3 +1,0 @@
-[console_scripts]
-obdocs = obdocs.cli:cli
-
